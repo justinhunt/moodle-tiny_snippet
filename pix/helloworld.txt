@@ -1,0 +1,1 @@
+{"name":"Hello World","key":"helloworld","instructions":"Select your mood from the list and press insert.","defaults":"MOOD=happy|sad|normal","body":"Hello. I am {{MOOD}}.","version":"1.0.0"}

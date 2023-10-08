@@ -1,0 +1,22 @@
+{{< core/modal }}
+{{$title}}{{#str}} widgetsselector, tiny_snippet {{/str}}{{/title}}
+    {{$body}}
+<div id="tiny_snippet_widgets_selectorpanel" class="tiny_snippet_widgets_selectorpanel">
+    <form class="tiny_snippet_form" id="{{uniqid}}_tiny_snippet_form">
+        <div class="root tab-content">
+          <div>{{#str}} widgetsselector_instructions, tiny_snippet {{/str}}</div>
+            {{#widgets}}
+            <div id="{{uniqid}}" class="tiny_snippet_widget_buttons mdl-align" style="width:30%;">
+            <button style="width: 100%;" data-templateindex="{{templateindex}}" class="tiny_snippet_widgetchoosebutton btn btn-info d-block">{{name}}</button>
+            </div>
+            {{/widgets}}
+        </div>
+    </form>
+</div>
+<div id="tiny_snippet_widgets_optionspanel" class="tiny_snippet_widgets_optionspanel tiny_snippet_hidden">
+</div>
+    {{/body}}
+    {{$footer}}
+        <button type="button" class="btn btn-secondary" data-action="cancel">{{#str}} cancel {{/str}}</button>
+    {{/footer}}
+{{/ core/modal }}

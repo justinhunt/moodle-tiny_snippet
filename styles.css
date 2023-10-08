@@ -1,0 +1,38 @@
+.tiny_snippet_dragdropsquare {
+    width:130px;
+    height:25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    color: #73AD21;
+    border: 1px solid #73AD21;
+    padding:1px 1px 1px 1px;
+    background-color:#CBF2DC;
+    margin-top:5px;
+    float:right;
+}
+
+div.tiny_snippet_dragging {
+    border:2px dashed #0000FF;
+}
+
+
+.tiny_snippet_field{
+    width: 200px;
+}
+div.tiny_snippet_widget_buttons {
+    display: inline-block;
+    margin: 5px;
+}
+.tiny_snippet_hidden{
+    display: none;
+}
+
+.tiny_snippet_widgetoptionsbuttons_cont{
+    margin: 10px;
+    margin-left: 100px;
+}
+.tiny_snippet_widgetoptionlabel {
+    padding: 10px;
+    width: 100px;
+}
