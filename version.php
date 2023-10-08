@@ -25,5 +25,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'tiny_snippet';
-$plugin->release = '1.0.0';
+$plugin->release = '1.0.0 (Build 2023100700)';
+$plugin->maturity = MATURITY_STABLE;
+$plugin->requires = 2022112800;//Moodle 4.1.0
 $plugin->version = 2023100700;
