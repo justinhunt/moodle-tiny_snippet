@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 
-$string['button_widgets'] = 'Snippet Widgets';
-$string['menuitem_widgets'] = 'Snippet Widgets';
+$string['button_widgets'] = 'Snippets';
+$string['menuitem_widgets'] = 'Snippets';
 $string['pluginname'] = 'Snippet for TinyMCE';
 $string['privacy:metadata'] = 'Snippet for TinyMCE does not store any personal data';
 $string['snippet:visible'] = 'Visible';
@@ -48,8 +48,8 @@ $string['snippet:visible'] = 'visible';
 $string['privacy:metadata'] = 'The snippet plugin does not store any personal data.';
 $string['insert'] = 'Insert';
 $string['back'] = 'Back';
-$string['widgetsselector'] = 'Widget Selector';
-$string['widgetsselector_instructions'] = 'Choose a widget to insert into the editor area.';
+$string['widgetsselector'] = 'Snippet Selector';
+$string['widgetsselector_instructions'] = 'Choose a snippet to insert into the editor area.';
 $string['snippet'] = 'Snippet';
 $string['snippetname'] = 'Snippet name';
 $string['snippetinstructions'] = 'Snippet instructions';
