@@ -45,6 +45,7 @@ $string['fieldsheader'] = 'Enter details for : ';
 $string['nofieldsheader'] = 'Insert : ';
 $string['chooseinsert'] = 'What do you want to insert?';
 $string['snippet:visible'] = 'visible';
+$string['snippet:use'] = 'Use Snippets in TinyMCE';
 $string['privacy:metadata'] = 'The snippet plugin does not store any personal data.';
 $string['insert'] = 'Insert';
 $string['back'] = 'Back';

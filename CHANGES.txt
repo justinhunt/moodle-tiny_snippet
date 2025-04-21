@@ -1,3 +1,7 @@
+Version 1.0.2 (Build 2025041700)
+- Added capability "use"
+- Tweaks for PHP 8.4
+
 Version 1.0.1 (Build 2023101800)
 -New icon
 
