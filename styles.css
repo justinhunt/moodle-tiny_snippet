@@ -12,6 +12,12 @@
     float:right;
 }
 
+.tiny_snippet_form {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 div.tiny_snippet_dragging {
     border:2px dashed #0000FF;
 }
@@ -32,8 +38,10 @@ div.tiny_snippet_widget_buttons {
 }
 
 .tiny_snippet_widgetoptionsbuttons_cont{
-    margin: 10px;
-    margin-left: 100px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 .tiny_snippet_widgetoptionlabel {
@@ -49,4 +57,12 @@ div.tiny_snippet_widget_buttons {
     display: flex;
     align-items: flex-start;
     margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+/* Test - might remove */
+input,
+select,
+textarea {
+    padding: 5px;
 }
