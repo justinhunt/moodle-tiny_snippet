@@ -16,14 +16,17 @@ div.tiny_snippet_dragging {
     border:2px dashed #0000FF;
 }
 
-
 .tiny_snippet_field{
-    width: 200px;
+    flex: 1;
+    min-width: 200px;
+    max-width: 100%;
 }
+
 div.tiny_snippet_widget_buttons {
     display: inline-block;
     margin: 5px;
 }
+
 .tiny_snippet_hidden{
     display: none;
 }
@@ -32,7 +35,18 @@ div.tiny_snippet_widget_buttons {
     margin: 10px;
     margin-left: 100px;
 }
+
 .tiny_snippet_widgetoptionlabel {
-    padding: 10px;
-    width: 200px;
+    width: 30%;
+    min-width: 180px;
+    padding-right: 1em;
+    font-weight: bold;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.tiny_snippet_form_row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
 }

@@ -7,25 +7,26 @@
 <form class="tiny_snippet_form" id="{{uniqid}}_tiny_snippet_form">
     <div class="root tab-content">
         {{#variables}}
-        <div><label for="{{key}}" class="tiny_snippet_widgetoptionlabel">{{displayname}}</label>
-            {{#isarray}}
-                    <select data-key="{{key}}" name="{{key}}" id="{{key}}" class="tiny_snippet_templatevariable_{{templateindex}} tiny_snippet_widget_field">
-                        {{#default}}
-                        <option value="{{.}}">{{.}}</option>
-                        {{/default}}
-                    </select>
-            {{/isarray}}
-            {{^isarray}}
-                {{#islongtext}}
-                    <textarea data-key="{{key}}" name="{{key}}" id="{{key}}" class="tiny_snippet_templatevariable_{{templateindex}} tiny_snippet_widget_field"
-                    rows="5" cols="40">{{default}}</textarea>
-                {{/islongtext}}
+            <div class="tiny_snippet_form_row">
+                <label for="{{key}}" class="tiny_snippet_widgetoptionlabel">{{displayname}}</label>
+                    {{#isarray}}
+                        <select data-key="{{key}}" name="{{key}}" id="{{key}}" class="tiny_snippet_templatevariable_{{templateindex}} tiny_snippet_widget_field">
+                            {{#default}}
+                                <option value="{{.}}">{{.}}</option>
+                            {{/default}}
+                        </select>
+                    {{/isarray}}
+                    {{^isarray}}
+                        {{#islongtext}}
+                            <textarea data-key="{{key}}" name="{{key}}" id="{{key}}" class="tiny_snippet_templatevariable_{{templateindex}} tiny_snippet_widget_field"
+                            rows="5" cols="40">{{default}}</textarea>
+                        {{/islongtext}}
 
-                {{^islongtext}}
-                    <input type="text" data-key="{{key}}" name="{{key}}" id="{{key}}" class="tiny_snippet_templatevariable_{{templateindex}} tiny_snippet_widget_field" value="{{default}}"></input>
-                {{/islongtext}}
-            {{/isarray}}
-        </div>
+                        {{^islongtext}}
+                            <input type="text" data-key="{{key}}" name="{{key}}" id="{{key}}" class="tiny_snippet_templatevariable_{{templateindex}} tiny_snippet_widget_field" value="{{default}}"></input>
+                        {{/islongtext}}
+                    {{/isarray}}
+            </div>
         {{/variables}}
     </div>
     <div class="tiny_snippet_widgetoptionsbuttons_cont">
