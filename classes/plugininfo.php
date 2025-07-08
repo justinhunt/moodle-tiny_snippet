@@ -137,9 +137,9 @@ class plugininfo extends plugin implements plugin_with_configuration, plugin_wit
                 if(strpos($default,'|')) {
                     $default = explode('|', $default);
                     $isarray=true;
-                } else if (strpos($default, '##longtext')) {
+                } else if (isset($default[0]) && $default[0] === "#") {
                     $islongtext = true;
-                    $default = str_replace('##longtext', '', $default);
+                    $default = substr($default, 1);
                 }
                 $display_name = str_replace('_',' ',$var);
                 $display_name = str_replace('-',' ',$display_name);
