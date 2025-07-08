@@ -18,6 +18,18 @@
     margin: 0 auto;
 }
 
+.tiny_snippet_widget_instructions {
+    text-align: left;
+    padding: 0 20px 10px 20px;
+    margin: 0;
+}
+
+.tiny_snippet_widget_instructions_title {
+    text-align: left;
+    padding: 0 20px;
+    margin-bottom: 5px;
+}
+
 div.tiny_snippet_dragging {
     border:2px dashed #0000FF;
 }
@@ -66,3 +78,4 @@ select,
 textarea {
     padding: 5px;
 }
+
