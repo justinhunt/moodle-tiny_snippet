@@ -16,7 +16,14 @@
                     </select>
             {{/isarray}}
             {{^isarray}}
-                <input type="text" data-key="{{key}}" name="{{key}}" id="{{key}}" class="tiny_snippet_templatevariable_{{templateindex}} tiny_snippet_widget_field" value="{{default}}"></input>
+                {{#islongtext}}
+                    <textarea data-key="{{key}}" name="{{key}}" id="{{key}}" class="tiny_snippet_templatevariable_{{templateindex}} tiny_snippet_widget_field"
+                    rows="5" cols="40">{{default}}</textarea>
+                {{/islongtext}}
+
+                {{^islongtext}}
+                    <input type="text" data-key="{{key}}" name="{{key}}" id="{{key}}" class="tiny_snippet_templatevariable_{{templateindex}} tiny_snippet_widget_field" value="{{default}}"></input>
+                {{/islongtext}}
             {{/isarray}}
         </div>
         {{/variables}}
