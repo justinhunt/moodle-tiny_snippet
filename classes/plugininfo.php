@@ -133,14 +133,22 @@ class plugininfo extends plugin implements plugin_with_configuration, plugin_wit
             foreach($allvariables as $var){
                 $default = isset($alldefaults[$var]) ? $alldefaults[$var] : '';
                 $isarray=false;
+                $islongtext = false;
                 if(strpos($default,'|')) {
                     $default = explode('|', $default);
                     $isarray=true;
+                } else if (strpos($default, '#')) {
+                    $islongtext = true;
                 }
                 $display_name = str_replace('_',' ',$var);
                 $display_name = str_replace('-',' ',$display_name);
                 $display_name =ucwords($display_name);
-                $widget->variables[] = ['key'=>$var,'default'=>$default, 'isarray'=>$isarray, 'displayname'=>$display_name];
+                $widget->variables[] = [
+                    'key'=>$var,
+                    'default'=>$default,
+                    'isarray'=>$isarray,
+                    'islongtext'=>$islongtext,
+                    'displayname'=>$display_name];
             }
 
             //set the template index so we can find it easily later.
