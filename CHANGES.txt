@@ -1,3 +1,7 @@
+Version 1.0.3 (Build 2025071000)
+- Added better formatting for text input fields
+- Added ability to use Textarea fields in the snippet popup form
+
 Version 1.0.2 (Build 2025041700)
 - Added capability "use"
 - Tweaks for PHP 8.4
